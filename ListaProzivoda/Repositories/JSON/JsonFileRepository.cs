@@ -15,8 +15,11 @@ namespace ListaProzivoda.Repositories.JSON
         public JsonFileRepository(string filePath)
         {
             _filePath = filePath;
+            if (!Directory.Exists(Path.GetDirectoryName(filePath)))
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
             if (!File.Exists(filePath))
             {
+                
                 File.Create(filePath).Close(); 
             }
 

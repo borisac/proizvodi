@@ -30,7 +30,7 @@ namespace ListaProzivoda.DataFactory
             }
             else
             {
-                return (IRepository<T>)new JsonFileRepository(@"C:\v\jsonTest.json");
+                return (IRepository<T>)new JsonFileRepository(@"C:\borisa_cajic\proizvodi\jsonTest.json");
             }
         }
     }

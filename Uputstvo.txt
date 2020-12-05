@@ -1,0 +1,8 @@
+Podesavanje za koriscenje JSON fajla ili EF za pristup podacima radi se na sledeci nacin
+-Ukoliko radimo sa JSON fajlom potrebno je zakomentarisati konekcioni string, tj. kompletan <add> tag koji je u konekcionom stringu u WebConfig fajlu 
+-name="ProizvodiEntities"
+	u suprotnom koristi se EF.
+
+Inicijalno je podesen da radi sa json fajlom.
+
+Srdacan pozdrav.
